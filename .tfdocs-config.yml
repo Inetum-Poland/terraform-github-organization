@@ -10,31 +10,15 @@ sections:
   show: []
 
 content: |-
-  {{ .Requirements }}
+  {{ .Providers }}
 
-  ## Usage
-  Basic usage of this module is as follows:
-  ```hcl
-  module "example" {
-    source = "<module-path>"
-  {{- if .Module.RequiredInputs }}
-  {{"\n"}}  # Required variables
-    {{- range .Module.RequiredInputs }}
-    {{ .Name }} =
-    {{- end }}
-    {{- end }}
-  {{- if .Module.OptionalInputs }}
-  {{"\n"}}  # Optional variables
-    {{- range .Module.OptionalInputs }}
-    {{ .Name }} ={{ .GetValue | printf " %s" }}
-    {{- end }}
-    {{- end }}
-  }
-  ```
+  {{ .Requirements }}
 
   {{ .Resources }}
 
   {{ .Inputs }}
+
+  {{ .Modules }}
 
   {{ .Outputs }}
 output:
