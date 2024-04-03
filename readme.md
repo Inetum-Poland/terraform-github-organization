@@ -1,5 +1,7 @@
 # Terraform module "github_organization"
 
+[![pre_commit](https://github.com/Inetum-Poland/tf-module-github-organization/actions/workflows/pre_commit.yml/badge.svg)](https://github.com/Inetum-Poland/tf-module-github-organization/actions/workflows/pre_commit.yml) [![trufflehog](https://github.com/Inetum-Poland/tf-module-github-organization/actions/workflows/trufflehog.yaml/badge.svg)](https://github.com/Inetum-Poland/tf-module-github-organization/actions/workflows/trufflehog.yaml)
+
 This module creates a GitHub organization.
 
 > [!IMPORTANT]
